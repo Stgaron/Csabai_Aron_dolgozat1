@@ -68,11 +68,16 @@ nav li{
     list-style-type: none;
     text-align: center;
     padding: 5px 10px 5px 10px;
+    
     border: 1px solid black;
+}
+footer{
+    text-align: center;
 }
 nav ul{
     display: grid;
     grid-template-columns: 100px 100px;
+    padding: 0;
 }
 nav li:hover{
     background-color: aqua;
