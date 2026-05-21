@@ -58,3 +58,46 @@ img{
     border: 1px solid gray;
     border-radius: 10px;
 }
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+nav li{
+    background-color: blanchedalmond;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+nav li:hover{
+    background-color: aqua;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+@media screen and (max-width:600px) {
+    main{
+        display: grid;
+        grid-template-areas:
+        "h h h"
+        "n n n" 
+        "ar ar ar"
+        "as as as"
+        "f f f"
+        ;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    body{
+        font-size:calc(10px + 2vw)
+    };
+}
